@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item img {
+            width: 100%;
+            height: 600px; /* Ajusta la altura del carrusel */
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .gallery-container {
+            padding: 30px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .gallery-container h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #343a40;
+        }
+
+        .pagination {
+            justify-content: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container gallery-container">
+        <h1 class="mb-4">CHICOS!</h1>
+
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcjs9YG5CE_5R5adVZlQykMcPYAAf64nom32H9wOjLtGQCtiWGegYQW35-HAnrT_MiU4U&usqp=CAU" class="d-block w-100" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/236x/48/d2/1c/48d21c456f94a59ffe5a25227a993786.jpg" class="d-block w-100" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img.freepik.com/foto-gratis/joven-musculoso-camisa-shorts-bano_613910-2377.jpg" class="d-block w-100" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/236x/c3/53/23/c35323f7de0529fa1530a6a3e194eaed.jpg" class="d-block w-100" alt="Image 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/236x/a1/12/79/a11279050dbd098d35fb772c2428ecd2.jpg" class="d-block w-100" alt="Image 5">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcjs9YG5CE_5R5adVZlQykMcPYAAf64nom32H9wOjLtGQCtiWGegYQW35-HAnrT_MiU4U&usqp=CAU">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="https://i.pinimg.com/236x/48/d2/1c/48d21c456f94a59ffe5a25227a993786.jpg">1</a></li>
+                <li class="page-item"><a class="page-link" href="https://img.freepik.com/foto-gratis/joven-musculoso-camisa-shorts-bano_613910-2377.jpg">2</a></li>
+                <li class="page-item"><a class="page-link" href="https://i.pinimg.com/236x/c3/53/23/c35323f7de0529fa1530a6a3e194eaed.jpg">3</a></li>
+                <li class="page-item"><a class="page-link" href="https://i.pinimg.com/236x/a1/12/79/a11279050dbd098d35fb772c2428ecd2.jpg">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
